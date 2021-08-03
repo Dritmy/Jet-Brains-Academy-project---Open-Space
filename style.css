@@ -1,0 +1,98 @@
+body {
+    background: url("space.png") no-repeat;
+    background-size: 100%;
+
+}
+
+.planet {
+    width: 30%;
+    height: 30%;
+    margin-top: 220px;
+
+}
+
+.rocket {
+    width: 20%;
+    height: 20%;
+    transform: rotate(30deg);
+    margin-left: -250px;
+    margin-bottom: 50px;
+}
+
+.control-panel__inner{
+    background: darkslategray;
+    height: 200px;
+    width: 400px;
+   /* display: flex; */
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.control-panel {
+    height: 220px;
+    width: 420px;
+    margin-top: 300px;
+    margin-left: 700px;
+    position: absolute;
+    background: repeating-linear-gradient(
+            45deg,
+            yellow,
+            yellow 10px,
+            black 10px,
+            black 20px
+    );
+}
+
+.pass {
+    height: 16px;
+    width: 150px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border: yellow solid;
+    border-radius: 10px;
+    background-color: darkslategray;
+
+}
+
+.passBtn {
+    height: 22px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.check {
+    margin-top: 20px;
+    margin-left: 43px;
+
+
+}
+
+.check-buttons {
+    display: flex;
+}
+
+.lever {
+    transform: rotate(-90deg);
+    width: 70px;
+
+    margin-top: 40px;
+    margin-left: 7px;
+
+}
+
+.levers {
+    display: flex;
+}
+
+.launch {
+    background-color: red;
+
+    margin-top: 30px;
+    margin-left: 170px;
+    color: white;
+    border: white solid;
+    border-radius: 20px;
+    height: 40px;
+}
