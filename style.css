@@ -1,14 +1,12 @@
 body {
     background: url("space.png") no-repeat;
     background-size: 100%;
-
 }
 
 .planet {
     width: 30%;
     height: 30%;
     margin-top: 220px;
-
 }
 
 .rocket {
@@ -53,7 +51,6 @@ body {
     border: yellow solid;
     border-radius: 10px;
     background-color: darkslategray;
-
 }
 
 .passBtn {
@@ -65,8 +62,6 @@ body {
 .check {
     margin-top: 20px;
     margin-left: 43px;
-
-
 }
 
 .check-buttons {
@@ -79,7 +74,6 @@ body {
 
     margin-top: 40px;
     margin-left: 7px;
-
 }
 
 .levers {
@@ -88,7 +82,6 @@ body {
 
 .launch {
     background-color: red;
-
     margin-top: 30px;
     margin-left: 170px;
     color: white;
