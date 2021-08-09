@@ -1,7 +1,4 @@
-
 let passBtn = document.querySelector(".passBtn");
-
-
 let checks = document.querySelectorAll(".check");
 let ranges = document.querySelectorAll(".lever");
 let launch = document.querySelector(".launch");
@@ -16,17 +13,13 @@ for (let i = 0; i < ranges.length; i++) {
 
 launch.setAttribute("disabled", "");
 launch.style.backgroundColor = "indianred";
-
 passBtn.onclick = function () {
     let pass = document.querySelector(".pass");
     if (pass.value === "TrustNo1") {
-
-
-
         for (let i = 0; i < checks.length; i++) {
             checks[i].removeAttribute("disabled");
         }
-
+        
         for (let i = 0; i < ranges.length; i++) {
             ranges[i].removeAttribute("disabled");
             console.log(ranges[i].value);
@@ -37,7 +30,6 @@ passBtn.onclick = function () {
 
 let flag = 1;
 for (let i = 0; i < checks.length; i++) {
-
     checks[i].onclick = function  () {
         checks = document.querySelectorAll(".check");
         ranges = document.querySelectorAll(".lever");
@@ -62,12 +54,10 @@ for (let i = 0; i < checks.length; i++) {
             launch.style.backgroundColor = "red";
             console.log("panel activated");
         }
-
     }
 }
 
 for (let i = 0; i < ranges.length; i++) {
-
     ranges[i].onchange = function  () {
         checks = document.querySelectorAll(".check");
         ranges = document.querySelectorAll(".lever");
@@ -93,7 +83,6 @@ for (let i = 0; i < ranges.length; i++) {
             launch.style.backgroundColor = "red";
             console.log("panel activated");
         }
-
     }
 }
 
@@ -102,17 +91,13 @@ let intervalID
 
 launch.onclick = function () {
     console.log("GO");
-   // let start = Date.now();
    intervalID = setInterval(Go, 40);
-
 }
 
 let start = 0;
 
-
 function Go() {
     start += 4;
-    //let timePassed = Date.now() - start;
     rocket.style.transform = 'translate(0px, '+ -start + 'px)';
     if (start > 600) {
         console.log("We go to some planet)))");
