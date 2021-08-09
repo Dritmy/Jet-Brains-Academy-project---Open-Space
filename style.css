@@ -21,7 +21,6 @@ body {
     background: darkslategray;
     height: 200px;
     width: 400px;
-   /* display: flex; */
     position: relative;
     flex-wrap: wrap;
     margin-top: 10px;
